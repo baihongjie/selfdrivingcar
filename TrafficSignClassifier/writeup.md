@@ -87,9 +87,9 @@ Epoch is set to 40 (only after 30 could I achieve 93% on validation dataset).
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. 
 
 My final model results were:
-* training set accuracy of 1.0
-* validation set accuracy of 0.942 
-* test set accuracy of 0.916
+* training set accuracy of 0.999
+* validation set accuracy of 0.932 
+* test set accuracy of 0.918
 
 * What architecture was chosen?
 LENET
