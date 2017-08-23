@@ -1,4 +1,4 @@
-#**Traffic Sign Recognition** 
+**Traffic Sign Recognition** 
 
 **Build a Traffic Sign Recognition Project**
 
@@ -22,7 +22,7 @@ You're reading it! and here is a link to my [project code](https://github.com/ba
 
 ### Data Set Summary & Exploration
 
-####1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
+#### 1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
 
 I used the pandas library to calculate summary statistics of the traffic
 signs data set:
@@ -51,7 +51,7 @@ As a first step, I decided to convert the images to grayscale because this will 
 
 Here is an example of a traffic sign image before and after grayscaling.
 
-![Before grayscaling]((https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/6.png?raw=true)
+![Before grayscaling](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/6.png?raw=true)
 ![After grayscaling](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/7.png?raw=true)
 
 As a last step, I normalized the image data because that make the algorithm numerically stable.
@@ -118,18 +118,18 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| Vehicles over 3.5 metric tons prohibited| Vehicles over 3.5 metric tons prohibited| 
+| Speed limit (30km/h)     			| Speed limit (30km/h) 										|
+| Keep right					| Keep right											|
+| Turn right ahead	      		| Turn right ahead					 				|
+| Right-of-way at the next intersection			| Right-of-way at the next intersection     							|
 
 
 The model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of 91.6%
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
+The code for making predictions on my final model is located in the last cell of the Ipython notebook.
 
 For the first image, the model is relatively sure that this is a 'Vehicles over 3.5 metric tons prohibited', and the image does contain a stop sign. The top five soft max probabilities were
 
