@@ -105,11 +105,11 @@ The accuracy are all > 90% which means it is neither much overfitting or underfi
 
 Here are five German traffic signs:
 
-![Vehicles over 3.5 metric tons prohibited](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/8.png?raw=true)
-![Speed limit (30km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/9.png?raw=true)
-![Keep right](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/10.png?raw=true)
-![Turn right ahead](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/11.png?raw=true)
-![Right-of-way at the next intersection](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/12.png?raw=true)
+![Yield](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download1.jpg?raw=true)
+![Stop](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download1.jpg?raw=true)
+![Children crossing](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download1.jpg?raw=true)
+![Slippery road](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download1.jpg?raw=true)
+![Speed limit (80km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download1.jpg?raw=true)
 
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
@@ -118,27 +118,29 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Vehicles over 3.5 metric tons prohibited| Vehicles over 3.5 metric tons prohibited| 
-| Speed limit (30km/h)     			| Speed limit (30km/h) 										|
-| Keep right					| Keep right											|
-| Turn right ahead	      		| Turn right ahead					 				|
-| Right-of-way at the next intersection			| Right-of-way at the next intersection     							|
+| Yield | Ahead only | 
+| Stop | Stop 										|
+| Children crossing | Speed limit (60km/h)											|
+| Slippery road		      		| Slippery road |
+| Speed limit (80km/h) | End of speed limit (80km/h) |
 
 
-The model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of 91.6%
+The model was able to correctly guess 2 of the 5 traffic signs, which gives an accuracy of 40%.
+This performs very bad compares to the accuracy on the test set of 91.6%
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 The code for making predictions on my final model is located in the last cell of the Ipython notebook.
 
-For the first image, the model is relatively sure that this is a 'Vehicles over 3.5 metric tons prohibited', and the image does contain a stop sign. The top five soft max probabilities were
+For the first image, the model is relatively sure that this is a 'Ahead only' but it is a yield sign.
+The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 52%         			| Vehicles over 3.5 metric tons prohibited| 
-| 17%     				| No passing 										|
-| 12%					| Roundabout mandatory											|
-| 11%	      			| Speed limit (100km/h)					 				|
-| 8%				    | Speed limit (120km/h)     							|
+| 32%         			| Ahead only| 
+| 29%     				| Slippery road 										|
+| 23%					| Go straight or right											|
+| 11%	      			| Children crossing					 				|
+| 7%				    | Yield     							|
 
 etc
