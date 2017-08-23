@@ -106,10 +106,10 @@ The accuracy are all > 90% which means it is neither much overfitting or underfi
 Here are five German traffic signs:
 
 ![Yield](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download1.jpg?raw=true)
-![Stop](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download1.jpg?raw=true)
-![Children crossing](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download1.jpg?raw=true)
-![Slippery road](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download1.jpg?raw=true)
-![Speed limit (80km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download1.jpg?raw=true)
+![Stop](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download2.jpg?raw=true)
+![Children crossing](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download3.jpg?raw=true)
+![Slippery road](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download4.jpg?raw=true)
+![Speed limit (80km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download5.jpg?raw=true)
 
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
@@ -128,7 +128,7 @@ Here are the results of the prediction:
 The model was able to correctly guess 2 of the 5 traffic signs, which gives an accuracy of 40%.
 This performs very bad compares to the accuracy on the test set of 91.6%
 
-#### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
+#### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability.
 
 The code for making predictions on my final model is located in the last cell of the Ipython notebook.
 
