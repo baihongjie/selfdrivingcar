@@ -110,7 +110,17 @@ Here are five German traffic signs:
 ![Children crossing](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download3.jpg?raw=true)
 ![Slippery road](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download4.jpg?raw=true)
 ![Speed limit (80km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download5.jpg?raw=true)
-
+![Stop](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download6.jpg?raw=true)
+![Road work](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download7.jpg?raw=true)
+![Speed limit (30km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download8.jpg?raw=true)
+![No passing](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download9.jpg?raw=true)
+![Speed limit (60km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download10.jpg?raw=true)
+![Speed limit (100km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download11.jpg?raw=true)
+![Pedestrians](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download12.jpg?raw=true)
+![Keep right](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download13.jpg?raw=true)
+![Go straight or right](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download14.jpg?raw=true)
+![End of speed limit (80km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download15.jpg?raw=true)
+![Ahead only](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download16.jpg?raw=true)
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -124,9 +134,31 @@ Here are the results of the prediction:
 | Slippery road		      		| Slippery road |
 | Speed limit (80km/h) | End of speed limit (80km/h) |
 
+| Stop | No passing |
+| Road work | Road work |
+| Speed limit (30km/h) | Road work |
+| No passing | No entry |
+| Speed limit (60km/h) | Speed limit (60km/h) |
 
-The model was able to correctly guess 2 of the 5 traffic signs, which gives an accuracy of 40%.
-This performs very bad compares to the accuracy on the test set of 91.6%
+| Speed limit (100km/h) | Speed limit (80km/h) |
+| Pedestrians | Turn left ahead |
+| Keep right | Yield |
+| Go straight or right | Go straight or right |
+| End of speed limit (80km/h) | End of no passing by vehicles over 3.5 metric tons |
+| Ahead only | Right-of-way at the next intersection |
+
+
+The model was able to correctly guess 5 of the 16 traffic signs, which gives an accuracy of 31.25%.
+This performs very bad compares to the accuracy on the test set of 91.6%.
+
+By manually checking the result, it looks the model is unable to predict correctly when
+1) the image is not centered well enough.
+2) the image is twisted.
+3) the image is squeezed.
+4) the image is not clear after scaling.
+
+Some image pre-processing such as cropping might be necessary to improve prediction.
+
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability.
 
