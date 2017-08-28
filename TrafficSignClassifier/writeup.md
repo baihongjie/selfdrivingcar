@@ -130,16 +130,16 @@ Here are the results of the prediction:
 |:---------------------:|:---------------------------------------------:| :---------------------------------------------:|:---------------------------------------------:|
 | Yield | Ahead only |![Yield](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download1.jpg?raw=true)|  Easy: Sign is on top half of the image|
 | Stop | Stop | ![Stop](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download2.jpg?raw=true) |  Medium: Sign is twisted.  |
-| Children crossing | Speed limit (60km/h) | ![Children crossing](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download3.jpg?raw=true) |  Difficult: Sign is squeezed|
+| Children crossing | Speed limit (60km/h) | ![Children crossing](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download3.jpg?raw=true) |  Difficult: Sign is squeezed after resizing to 32x32|
 | Slippery road | Slippery road |![Slippery road](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download4.jpg?raw=true)  |  Easy|
-| Speed limit (80km/h) | End of speed limit (80km/h) | ![Speed limit (80km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download5.jpg?raw=true)  | Easy: sign is squeezed a bit|
+| Speed limit (80km/h) | End of speed limit (80km/h) | ![Speed limit (80km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download5.jpg?raw=true)  | Easy: sign is squeezed a bit after resizing to 32x32|
 | Stop | No passing |![Stop](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download6.jpg?raw=true)  |  Easy|
-| Road work | Road work | ![Road work](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download7.jpg?raw=true) |  Medium: sign is squeezed|
-| Speed limit (30km/h) | Road work | ![Speed limit (30km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download8.jpg?raw=true)  | Medium: sign is squeezed|
+| Road work | Road work | ![Road work](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download7.jpg?raw=true) |  Medium: sign is squeezed after resizing to 32x32|
+| Speed limit (30km/h) | Road work | ![Speed limit (30km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download8.jpg?raw=true)  | Medium: sign is squeezed after resizing to 32x32|
 | No passing | No entry  | ![No passing](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download9.jpg?raw=true) |  Easy|
 | Speed limit (60km/h) | Speed limit (60km/h) | ![Speed limit (60km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download10.jpg?raw=true)  | Easy|
-| Speed limit (100km/h) | Speed limit (80km/h) |![Speed limit (100km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download11.jpg?raw=true)  |  Difficult: sign is squeezed and hard to recognize|
-| Pedestrians | Turn left ahead | ![Pedestrians](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download12.jpg?raw=true) |  Medium: sign is squeezed|
+| Speed limit (100km/h) | Speed limit (80km/h) |![Speed limit (100km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download11.jpg?raw=true)  |  Difficult: sign is squeezed after resizing to 32x32 and hard to recognize|
+| Pedestrians | Turn left ahead | ![Pedestrians](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download12.jpg?raw=true) |  Medium: sign is squeezed after resizing to 32x32|
 | Keep right | Yield |![Keep right](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download13.jpg?raw=true) |  Easy|
 | Go straight or right | Go straight or right |![Go straight or right](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download14.jpg?raw=true) | Easy|
 | End of speed limit (80km/h) | End of no passing by vehicles over 3.5 metric tons |![End of speed limit (80km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download15.jpg?raw=true) |  Easy|
@@ -153,8 +153,9 @@ By manually checking the result, it looks the model is unable to predict correct
 1) the image is not centered well enough.
 2) the image is twisted.
 3) the image is squeezed.
-4) the image is not clear after scaling.
 Some image pre-processing such as cropping might be necessary to improve prediction.
+Also 32x32 is too small as input to the model.
+
 There are a few easy cases that model failed. Not sure what happened but probably the model is overfitting or not enough training data.
 
 
