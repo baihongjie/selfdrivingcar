@@ -103,7 +103,7 @@ The accuracy are all > 90% which means it is neither much overfitting or underfi
 
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-Here are five German traffic signs:
+Here are sixteen German traffic signs:
 
 ![Yield](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download1.jpg?raw=true)
 ![Stop](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download2.jpg?raw=true)
@@ -153,9 +153,9 @@ By manually checking the result, it looks the model is unable to predict correct
 1) the image is not centered well enough.
 2) the image is twisted.
 3) the image is squeezed.
+
 Some image pre-processing such as cropping might be necessary to improve prediction.
 Also 32x32 is too small as input to the model.
-
 There are a few easy cases that model failed. Not sure what happened but probably the model is overfitting or not enough training data.
 
 
