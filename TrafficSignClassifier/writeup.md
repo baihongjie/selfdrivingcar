@@ -126,26 +126,24 @@ Here are five German traffic signs:
 
 Here are the results of the prediction:
 
-| Image			        |     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| Yield | Ahead only | 
-| Stop | Stop 										|
-| Children crossing | Speed limit (60km/h)											|
-| Slippery road		      		| Slippery road |
-| Speed limit (80km/h) | End of speed limit (80km/h) |
-
-| Stop | No passing |
-| Road work | Road work |
-| Speed limit (30km/h) | Road work |
-| No passing | No entry |
-| Speed limit (60km/h) | Speed limit (60km/h) |
-
-| Speed limit (100km/h) | Speed limit (80km/h) |
-| Pedestrians | Turn left ahead |
-| Keep right | Yield |
-| Go straight or right | Go straight or right |
-| End of speed limit (80km/h) | End of no passing by vehicles over 3.5 metric tons |
-| Ahead only | Right-of-way at the next intersection |
+| Image			        |     Prediction	        					| Difficulty | 
+|:---------------------:|:---------------------------------------------:| :---------------------------------------------:|
+| Yield | Ahead only |  Easy: Sign is on top half of the image|
+| Stop | Stop | Medium: Sign is twisted.  |
+| Children crossing | Speed limit (60km/h) | Difficult: Sign is squeezed|
+| Slippery road | Slippery road | Easy|
+| Speed limit (80km/h) | End of speed limit (80km/h) |Easy: sign is squeezed a bit|
+| Stop | No passing | Easy|
+| Road work | Road work |Medium: sign is squeezed|
+| Speed limit (30km/h) | Road work |Medium: sign is squeezed|
+| No passing | No entry |Easy|
+| Speed limit (60km/h) | Speed limit (60km/h) |Easy|
+| Speed limit (100km/h) | Speed limit (80km/h) |Difficult: sign is squeezed and hard to recognize|
+| Pedestrians | Turn left ahead |Medium: sign is squeezed|
+| Keep right | Yield |Easy|
+| Go straight or right | Go straight or right |Easy|
+| End of speed limit (80km/h) | End of no passing by vehicles over 3.5 metric tons |Easy|
+| Ahead only | Right-of-way at the next intersection |Easy|
 
 
 The model was able to correctly guess 5 of the 16 traffic signs, which gives an accuracy of 31.25%.
@@ -156,8 +154,8 @@ By manually checking the result, it looks the model is unable to predict correct
 2) the image is twisted.
 3) the image is squeezed.
 4) the image is not clear after scaling.
-
 Some image pre-processing such as cropping might be necessary to improve prediction.
+There are a few easy cases that model failed. Not sure what happened but probably the model is overfitting or not enough training data.
 
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability.
