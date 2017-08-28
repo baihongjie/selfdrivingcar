@@ -132,8 +132,8 @@ Here are the results of the prediction:
 | Stop | Stop | ![Stop](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download2.jpg?raw=true) |  Medium: Sign is twisted.  |
 | Children crossing | Speed limit (60km/h) | ![Children crossing](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download3.jpg?raw=true) |  Difficult: Sign is squeezed after resizing to 32x32|
 | Slippery road | Slippery road |![Slippery road](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download4.jpg?raw=true)  |  Easy|
-| Speed limit (80km/h) | End of speed limit (80km/h) | ![Speed limit (80km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download5.jpg?raw=true)  | Easy: sign is squeezed a bit after resizing to 32x32|
-| Stop | No passing |![Stop](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download6.jpg?raw=true)  |  Medium: there is watermark.|
+| Speed limit (80km/h) | End of speed limit (80km/h) | ![Speed limit (80km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download5.jpg?raw=true)  | Medium: sign is squeezed a bit after resizing to 32x32. Also there is watermark.|
+| Stop | No passing |![Stop](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download6.jpg?raw=true)  |  Easy. |
 | Road work | Road work | ![Road work](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download7.jpg?raw=true) |  Medium: sign is squeezed after resizing to 32x32|
 | Speed limit (30km/h) | Road work | ![Speed limit (30km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download8.jpg?raw=true)  | Medium: sign is squeezed after resizing to 32x32|
 | No entry| No entry  | ![No passing](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download9.jpg?raw=true) |  Easy|
