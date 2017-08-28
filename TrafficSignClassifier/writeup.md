@@ -164,15 +164,42 @@ There are a few easy cases that model failed. Not sure what happened but probabl
 
 The code for making predictions on my final model is located in the last cell of the Ipython notebook.
 
-For the first image, the model is relatively sure that this is a 'Ahead only' but it is a yield sign.
 The top five soft max probabilities were
 
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| 32%         			| Ahead only| 
-| 29%     				| Slippery road 										|
-| 23%					| Go straight or right											|
-| 11%	      			| Children crossing					 				|
-| 7%				    | Yield     							|
+| Image			        |     Prediction| image	        					|
+|:---------------------:|:---------------------------------------------:| :---------------------------------------------:|
+| Yield | Ahead only:32.233814 Slippery road:29.019138 Go straight or right:23.781366 Children crossing:11.081440 Yield:7.378864|![Yield](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download1.jpg?raw=true)|
+| Stop | Stop:19.771164 Turn right ahead:16.488478 Speed limit (70km/h):10.438532 Speed limit (50km/h):8.178452 Road work:4.927989 | ![Stop](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download2.jpg?raw=true) |
+| Children crossing | Speed limit (60km/h):18.303318 Speed limit (30km/h):1.378690 Slippery road:-0.395384 Go straight or right:-0.665137 Ahead only:-1.444520 | ![Children crossing](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download3.jpg?raw=true) |
+| Slippery road | Slippery road:28.816086 Right-of-way at the next intersection:18.833385 Dangerous curve to the left:18.032318 Double curve:17.156925 Beware of ice/snow:12.703184 |![Slippery road](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download4.jpg?raw=true)  |
+| Speed limit (80km/h) | End of speed limit (80km/h):9.193988 Go straight or right:8.339031 Speed limit (30km/h):7.658392 Speed limit (80km/h):7.584309 Ahead only:-0.831196 | ![Speed limit (80km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download5.jpg?raw=true)  |
+| Stop |No passing:18.239706 Yield:18.123661 No passing for vehicles over 3.5 metric tons:17.611416 Priority road:15.845152 Dangerous curve to the left:3.487552 |![Stop](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download6.jpg?raw=true)  |
+| Road work | Road work:64.409065 Double curve:11.432398 Wild animals crossing:6.631978 Right-of-way at the next intersection:2.695795 Go straight or left:2.478613 | ![Road work](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download7.jpg?raw=true) |
+| Speed limit (30km/h) | Road work:43.407940 Slippery road:31.630814 No passing for vehicles over 3.5 metric tons:12.144956 Ahead only:7.739809 Go straight or right:1.403698 | ![Speed limit (30km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download8.jpg?raw=true)  |
+| No entry| No entry:35.333153 No passing:8.294834 Turn right ahead:7.610146 Yield:7.367533 Turn left ahead:4.408117 | ![No passing](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download9.jpg?raw=true) |
+| Speed limit (60km/h) | Speed limit (60km/h):58.587658 Speed limit (30km/h):54.857620 Keep right:24.571083 Go straight or right:22.796919 Speed limit (50km/h):9.996917 | ![Speed limit (60km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download10.jpg?raw=true)  |
+| Speed limit (100km/h) | Speed limit (80km/h):16.932646 End of speed limit (80km/h):14.084743 Speed limit (30km/h):12.356865 Speed limit (100km/h):10.574906 End of no passing by vehicles over 3.5 metric tons:8.505385 |![Speed limit (100km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download11.jpg?raw=true)  |
+| Pedestrians | Turn left ahead:10.467297 Vehicles over 3.5 metric tons prohibited:8.581168 Roundabout mandatory:6.776857 No entry:5.037635 No passing:4.522285 | ![Pedestrians](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download12.jpg?raw=true) |
+| Keep right | Yield:38.303062 Ahead only:24.338717 Dangerous curve to the left:21.610338 No passing for vehicles over 3.5 metric tons:7.026790 Road work:6.045825 |![Keep right](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download13.jpg?raw=true) |
+| Go straight or right | Go straight or right:38.983105 Right-of-way at the next intersection:27.354635 Children crossing:14.081757 Turn left ahead:4.588902 End of all speed and passing limits:-1.635918 |![Go straight or right](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download14.jpg?raw=true) |
+| End of speed limit (80km/h) | End of no passing by vehicles over 3.5 metric tons:13.752259 End of speed limit (80km/h):12.811898 End of all speed and passing limits:8.023116 Roundabout mandatory:6.100760 Speed limit (60km/h):5.698773 |![End of speed limit (80km/h)](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download15.jpg?raw=true) | 
+| Ahead only | Right-of-way at the next intersection:23.175037 General caution:23.079329 Speed limit (30km/h):18.286972 Roundabout mandatory:11.118825 Pedestrians:7.036125 |![Ahead only](https://github.com/baihongjie/selfdrivingcar/blob/master/TrafficSignClassifier/download16.jpg?raw=true) | 
 
-etc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
