@@ -42,11 +42,13 @@ After the collection process, I had 20832 number of data points.
 I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 
 ####5. Result
+
 After training the model, I used drive.py to test it on simulator. The driving works almost perfectly at the beginning! However, when it reached a curve where there is no clear lane, it drove off the road and went into the soil land.
 After investigating, I think it is because the training data has too few such data. I decided to recollect training data. I drove 5 laps instead of 2 and clicked steering button strongly during that part of the road.
 However, other problems happen: the car drove into the river. I tried a lot and ended up adding more convolution layers and tuning drop out which finally made the driving great.
 
 ####6. Submission 
+
 My project includes the following files:
 * model.py containing the script to create and train the model
 * drive.py for driving the car in autonomous mode
