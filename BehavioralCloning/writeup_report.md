@@ -21,7 +21,6 @@ My model consists of a convolution neural network similar to LENET
 * Repeat above convolution again using 36 filters.
 * Using 120 fully connected layer followed by 0.2 drop out rate.
 * Using 84 fully connected layer followed by 0.2 drop out rate.
-* Repeat above with 84 fully connected layer.
 * output
 
 ####2. Reduce overfitting in the model
