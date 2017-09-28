@@ -27,36 +27,36 @@ My code includes seven parts
 #### 1. Camera Calibration
 
 I use the chess images provided and findChessboardCorners function to detect corners. Then I am able to collect a number of corner points which will be used to do undistortion.
-![Example1][https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/chess1.png]
-![Example2][https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/chess2.png]
+![Example1](https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/chess1.png)
+![Example2](https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/chess2.png)
 
 #### 2. Undistort images
 Given a number of objpoints/imgpoints, it is straightforward to use cv2.calibrateCamera to calibrate the images. The output are camera matrix and distortant coefficients. By using them, we could easily undistort a real image.
-![Example1][https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/undistort1.png]
-![Example2][https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/undistort2.png]
+![Example1](https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/undistort1.png)
+![Example2](https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/undistort2.png)
 
 #### 3. Threshold the image
 There are many ways to threshold the image. I finally used HLS's S channel and sobelx+magnitude+direction on L channel. By only using S channel, it already works pretty well.  
-![Example1][https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/threshold1.png]
-![Example2][https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/threshold2.png]
+![Example1](https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/threshold1.png)
+![Example2](https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/threshold2.png)
 
 #### 4. Warp the image
 By using some heuristic src/dst points, we are able to warp the image into bird view. 
-![Example1][https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/warp1.png]
-![Example2][https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/warp2.png]
+![Example1](https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/warp1.png)
+![Example2](https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/warp2.png)
 
 
 #### 5. Plot the lane and fit a polynomial
 By using histogram peak algorithm, we could find the hot pixels along the lanes.
 Then we use a polynomial to fit the lanes and then we usually could successfully find the two lanes.
 
-![Example1][https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/curve1.png]
-![Example2][https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/curve2.png]
+![Example1](https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/curve1.png)
+![Example2](https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/curve2.png)
 
 #### 6. Measure the curvature
 After fitting a polynomial, we could use simple formula to know the radius of the curvature and also we could easily know the distance between the center and the car.
-![Example1][https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/radius1.png]
-![Example2][https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/radius2.png]
+![Example1](https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/radius1.png)
+![Example2](https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/radius2.png)
 
 
 #### 7. Video
