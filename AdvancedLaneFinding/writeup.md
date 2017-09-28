@@ -55,6 +55,7 @@ Then we use a polynomial to fit the lanes and then we usually could successfully
 
 #### 6. Measure the curvature
 After fitting a polynomial, we could use simple formula to know the radius of the curvature and also we could easily know the distance between the center and the car.
+
 ![Example1](https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/radius1.png)
 ![Example2](https://github.com/baihongjie/selfdrivingcar/blob/master/AdvancedLaneFinding/writeup/radius2.png)
 
@@ -65,4 +66,4 @@ By putting these all together on a video
 Here's a [result](output.mp4)
 
 ### Discussion
-The biggest problem I have found is on the tresholdding step. By simply using S channel, I could get very good result. However, to solve some other corner cases, I need to use other approaches. Without very good understanding on the theory, I have difficulty knowing which to choose and I could only rely on trying.
+The biggest problem I have found is on the thresholding step. By simply using S channel, I could get very good result. However, to solve some other corner cases, I need to use other approaches. Without very good understanding on the theory, I have difficulty knowing which to choose and I could only rely on trying.
