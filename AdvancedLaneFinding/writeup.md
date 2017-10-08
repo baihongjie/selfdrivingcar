@@ -66,4 +66,9 @@ By putting these all together on a video
 Here's a [result](output.mp4)
 
 ### Discussion
-The biggest problem I have found is on the thresholding step. By simply using S channel, I could get very good result. However, to solve some other corner cases, I need to use other approaches. Without very good understanding on the theory, I have difficulty knowing which to choose and I could only rely on trying.
+The biggest problem I have found is on the thresholding step. By simply using S channel, I could get very good result. However, to solve some other corner cases, I need to use other approaches. Without very good understanding on the theory, I have difficulty knowing which to choose and I could only rely on trying. After applying L of Luv and b of Lab, the thresholding step is much more stable for the base video.
+
+The sanity check step is also very helpful because it is hard to guarantee we could always do a good job on every frame. Even if the logic of sanity check is not easy, by using simple method with higher recall but lower precision, it works reasonably well.
+
+Even if I have tuned a very good threshold for the base video, many thresholds failed on new videos such as "challenge_video". The failure is caused by more shadows, different sunshine, lighter color of lanes, etc. I will need to re-tune most of the parameters again. Also the newly refinished road sometimes have two colors and the separation part sometimes got detected as lanes. So I also need to make sure the detected lane are on appropriate position. I haven't been able to finish this part but I have clear picture on what changes I need to make.
+
