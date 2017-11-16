@@ -1,4 +1,4 @@
-## Writeup Template
+## Vehicle Detection Writeup 
 
 **Vehicle Detection Project**
 
@@ -31,7 +31,7 @@ I followed the udacity code to extract HOG and spartial features. The parameters
 * spatial_size
 
 Here is an example of extracted feature images.
-![HOG feature example][hog_feature.png]
+![HOG feature example][https://github.com/baihongjie/selfdrivingcar/blob/master/ObjectDetection/hog_feature.png]
 
 It is able to detect shape of the car which is essential for detection.
 I didn't choose color histogram because it seems to cause some false positive in real image classification.
@@ -66,18 +66,18 @@ To optimize prediction, I precompute HOG features and use a slice window approac
 We choose window position to be where the cars are most likely to appear and choose a few scales because we don't know 
 the car size in the image.
 
-![Good][detect1.png]
+![Good][https://github.com/baihongjie/selfdrivingcar/blob/master/ObjectDetection/detect1.png]
 
-![Good][detect2.png]
+![Good][https://github.com/baihongjie/selfdrivingcar/blob/master/ObjectDetection/detect2.png]
 
 However, sometimes there are glitches as below
 
-![False positive][detect3.png]
+![False positive][https://github.com/baihongjie/selfdrivingcar/blob/master/ObjectDetection/detect3.png]
 
 ### Reduce false positive
 As we could see above, there are false positive very often. We use heatmap and only accept pixels which are covered by more than one or two blocks.
 This greatly reduce the noise.
-![With noise reduced][fixed1.png]
+![With noise reduced][https://github.com/baihongjie/selfdrivingcar/blob/master/ObjectDetection/fixed1.png]
 
 ### Video Implementation
 
