@@ -12,7 +12,7 @@ int a = 0;
  * Initializes Unscented Kalman filter
  */
 UKF::UKF() {
-  debug_ = true;
+  debug_ = false;
 
   is_initialized_ = false;
   // if this is false, laser measurements will be ignored (except during init)
