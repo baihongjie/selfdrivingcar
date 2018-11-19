@@ -112,11 +112,11 @@ void ParticleFilter::updateWeights(double sensor_range, double std_landmark[],
     for (const auto& l: map_landmarks.landmark_list){
       double distance = dist(p.x, p.y, l.x_f, l.y_f);
       if (distance < sensor_range) {
-	LandmarkObs landmark;
-	landmark.id = l.id_i;
-	landmark.x = l.x_f;
-	landmark.y = l.y_f;
-	predicted.push_back(landmark);
+        LandmarkObs landmark;
+        landmark.id = l.id_i;
+        landmark.x = l.x_f;
+        landmark.y = l.y_f;
+        predicted.push_back(landmark);
       }
     }
 
