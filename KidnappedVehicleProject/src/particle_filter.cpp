@@ -143,7 +143,7 @@ void ParticleFilter::resample() {
   for (const auto& p : particles) {
     weights.push_back(p.weight);
   }
-  std::discrete_distribution<float> d(weights.begin(), weights.end());
+  std::discrete_distribution<int> d(weights.begin(), weights.end());
   vector<Particle> v;
   for(int n = 0; n < num_particles; ++n) {
     v.push_back(particles[d(gen)]);
