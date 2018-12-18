@@ -10,7 +10,7 @@ using std::vector;
 size_t N = 10;
 double dt = 0.1;
 
-double ref_v = 100;
+double ref_v = 70;
 
 // This value assumes the model presented in the classroom is used.
 //
