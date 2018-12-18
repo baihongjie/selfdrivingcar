@@ -6,5 +6,5 @@ CXX_FLAGS = -Wall   -std=c++11 -O3
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include -I/home/hjbai/projects/MPC/src/Eigen-3.3 
+CXX_INCLUDES = -I/usr/local/include -I/home/hjbai/projects/selfdrivingcar/MPC/src/Eigen-3.3 
 

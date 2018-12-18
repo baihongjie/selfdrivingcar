@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hjbai/projects/MPC
+CMAKE_SOURCE_DIR = /home/hjbai/projects/selfdrivingcar/MPC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hjbai/projects/MPC/build
+CMAKE_BINARY_DIR = /home/hjbai/projects/selfdrivingcar/MPC/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/mpc.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/mpc.dir/flags.make
 
 CMakeFiles/mpc.dir/src/MPC.cpp.o: CMakeFiles/mpc.dir/flags.make
 CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hjbai/projects/MPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mpc.dir/src/MPC.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpc.dir/src/MPC.cpp.o -c /home/hjbai/projects/MPC/src/MPC.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hjbai/projects/selfdrivingcar/MPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mpc.dir/src/MPC.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpc.dir/src/MPC.cpp.o -c /home/hjbai/projects/selfdrivingcar/MPC/src/MPC.cpp
 
 CMakeFiles/mpc.dir/src/MPC.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpc.dir/src/MPC.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hjbai/projects/MPC/src/MPC.cpp > CMakeFiles/mpc.dir/src/MPC.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hjbai/projects/selfdrivingcar/MPC/src/MPC.cpp > CMakeFiles/mpc.dir/src/MPC.cpp.i
 
 CMakeFiles/mpc.dir/src/MPC.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpc.dir/src/MPC.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hjbai/projects/MPC/src/MPC.cpp -o CMakeFiles/mpc.dir/src/MPC.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hjbai/projects/selfdrivingcar/MPC/src/MPC.cpp -o CMakeFiles/mpc.dir/src/MPC.cpp.s
 
 CMakeFiles/mpc.dir/src/MPC.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o.provides.build: CMakeFiles/mpc.dir/src/MPC.cpp.
 
 CMakeFiles/mpc.dir/src/main.cpp.o: CMakeFiles/mpc.dir/flags.make
 CMakeFiles/mpc.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hjbai/projects/MPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mpc.dir/src/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpc.dir/src/main.cpp.o -c /home/hjbai/projects/MPC/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hjbai/projects/selfdrivingcar/MPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mpc.dir/src/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpc.dir/src/main.cpp.o -c /home/hjbai/projects/selfdrivingcar/MPC/src/main.cpp
 
 CMakeFiles/mpc.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpc.dir/src/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hjbai/projects/MPC/src/main.cpp > CMakeFiles/mpc.dir/src/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hjbai/projects/selfdrivingcar/MPC/src/main.cpp > CMakeFiles/mpc.dir/src/main.cpp.i
 
 CMakeFiles/mpc.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpc.dir/src/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hjbai/projects/MPC/src/main.cpp -o CMakeFiles/mpc.dir/src/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hjbai/projects/selfdrivingcar/MPC/src/main.cpp -o CMakeFiles/mpc.dir/src/main.cpp.s
 
 CMakeFiles/mpc.dir/src/main.cpp.o.requires:
 
@@ -117,7 +117,7 @@ mpc: CMakeFiles/mpc.dir/src/MPC.cpp.o
 mpc: CMakeFiles/mpc.dir/src/main.cpp.o
 mpc: CMakeFiles/mpc.dir/build.make
 mpc: CMakeFiles/mpc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hjbai/projects/MPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable mpc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hjbai/projects/selfdrivingcar/MPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable mpc"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mpc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -135,6 +135,6 @@ CMakeFiles/mpc.dir/clean:
 .PHONY : CMakeFiles/mpc.dir/clean
 
 CMakeFiles/mpc.dir/depend:
-	cd /home/hjbai/projects/MPC/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjbai/projects/MPC /home/hjbai/projects/MPC /home/hjbai/projects/MPC/build /home/hjbai/projects/MPC/build /home/hjbai/projects/MPC/build/CMakeFiles/mpc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hjbai/projects/selfdrivingcar/MPC/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjbai/projects/selfdrivingcar/MPC /home/hjbai/projects/selfdrivingcar/MPC /home/hjbai/projects/selfdrivingcar/MPC/build /home/hjbai/projects/selfdrivingcar/MPC/build /home/hjbai/projects/selfdrivingcar/MPC/build/CMakeFiles/mpc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/mpc.dir/depend
 
